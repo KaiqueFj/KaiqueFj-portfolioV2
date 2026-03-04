@@ -11,11 +11,11 @@ interface ExtendedProjectCardProps extends ProjectCardProps {
 
 export default function ProjectCard({
   imageSrc,
+  slug,
   date,
   title,
   description,
   technologies,
-  link,
   variant = "default",
   className,
 }: ExtendedProjectCardProps) {
@@ -23,7 +23,7 @@ export default function ProjectCard({
 
   return (
     <Link
-      href={link}
+      href={`/projects/${slug}`}
       className={clsx(
         "group rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl",
         "border border-white/5 bg-surface/60 backdrop-blur-md",

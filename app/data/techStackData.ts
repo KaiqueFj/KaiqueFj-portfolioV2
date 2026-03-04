@@ -25,7 +25,7 @@ export const techStack = [
     items: [{ name: "React Native" }],
   },
   {
-    category: "Banco de Dados",
+    category: "Database",
     icon: Database,
     items: [{ name: "MongoDB" }, { name: "Redis" }, { name: "PostgreSQL" }, { name: "MySQL" }],
   },
