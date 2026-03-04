@@ -9,12 +9,12 @@ export default function Hero() {
         {/* Left Text */}
         <div className="flex-1 space-y-8">
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight">
-            <span className="bg-linear-to-r from-accent to-accent/70 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-accent to-accent/90 bg-clip-text text-transparent">
               Software Engineer building the next level
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-lg text-primary max-w-2xl leading-relaxed">
             Hi, I’m Kaique Ferraz, Fullstack Engineer / Senior SRE passionate about distributed systems, observability,
             and production reliability. I design software that empowers businesses to operate confidently and
             efficiently.

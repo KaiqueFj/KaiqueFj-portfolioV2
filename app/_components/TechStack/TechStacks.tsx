@@ -29,7 +29,7 @@ export default function TechStacks() {
                 {section.items.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-4 py-2 text-sm rounded-full bg-secondary/40 border border-secondary hover:border-accent transition"
+                    className="px-4 py-2 text-primary text-sm rounded-full bg-secondary/40 border border-secondary hover:border-accent transition"
                   >
                     {tech.name}
                   </span>

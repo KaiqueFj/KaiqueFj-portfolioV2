@@ -5,6 +5,7 @@ export interface Technology {
 export interface ProjectCardProps {
   imageSrc: string;
   title: string;
+  date: string;
   description: string;
   technologies: Technology[];
   link: string;
