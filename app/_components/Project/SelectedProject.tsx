@@ -40,7 +40,7 @@ export default function SelectedProject({
                 href={link.link}
                 target="_blank"
                 className="flex items-center gap-2 px-4 py-2 rounded-lg
-                bg-secondary text-primary hover:bg-accent transition"
+                bg-secondary/40 border border-secondary text-primary hover:bg-accent transition"
               >
                 {link.name === "website" ? <Globe size={18} /> : <GithubIcon size={18} />}
 

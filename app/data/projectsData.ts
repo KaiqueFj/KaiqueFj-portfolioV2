@@ -19,11 +19,18 @@ export const projects = [
       "Created a responsive UI with TailwindCSS optimized for mobile and desktop",
     ],
 
-    technologies: [{ name: "NextJS" }, { name: "NextAuth" }, { name: "Supabase" }, { name: "Tailwind" }],
+    technologies: [
+      { name: "NextJS" },
+      { name: "Typescript" },
+      { name: "Framer Motion" },
+      { name: "NextAuth" },
+      { name: "Supabase" },
+      { name: "Tailwind" },
+    ],
 
     links: [
-      { name: "website", link: "https://crypto-currency-pgqa.onrender.com/overview" },
-      { name: "github", link: "https://github.com/kaiqu/sneakers-store" },
+      { name: "website", link: "https://sharkf-store.netlify.app/" },
+      { name: "github", link: "https://github.com/KaiqueFj/Sneaker-store" },
     ],
 
     date: "Feb. 2026",
@@ -54,7 +61,7 @@ export const projects = [
 
     links: [
       { name: "website", link: "https://crypto-currency-pgqa.onrender.com/overview" },
-      { name: "github", link: "https://github.com/kaiqu/sneakers-store" },
+      { name: "github", link: "https://github.com/KaiqueFj/Crypto-currencye" },
     ],
 
     date: "Mar. 2025",
@@ -83,8 +90,8 @@ export const projects = [
     technologies: [{ name: "NodeJS" }, { name: "MongoDB" }, { name: "Pug template" }, { name: "Socket.io" }],
 
     links: [
-      { name: "website", link: "https://crypto-currency-pgqa.onrender.com/overview" },
-      { name: "github", link: "https://github.com/kaiqu/sneakers-store" },
+      { name: "website", link: "https://super-chat-uhey.onrender.com/" },
+      { name: "github", link: "https://github.com/KaiqueFj/Super-chat" },
     ],
 
     date: "Sep. 2025",
