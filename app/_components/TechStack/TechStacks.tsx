@@ -1,4 +1,6 @@
 import { techStack } from "@/app/data/techStackData";
+import Reveal from "../motion/Reveal";
+import { staggerContainer } from "../motion/variants";
 
 export default function TechStacks() {
   return (
@@ -9,12 +11,12 @@ export default function TechStacks() {
       </div>
 
       {/* Tech Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Reveal variants={staggerContainer} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {techStack.map((section, index) => {
           const Icon = section.icon;
 
           return (
-            <div
+            <Reveal
               key={index}
               className="group rounded-2xl border border-secondary/40 bg-surface backdrop-blur-sm p-8 transition hover:-translate-y-1 hover:border-accent"
             >
@@ -35,10 +37,10 @@ export default function TechStacks() {
                   </span>
                 ))}
               </div>
-            </div>
+            </Reveal>
           );
         })}
-      </div>
+      </Reveal>
     </section>
   );
 }

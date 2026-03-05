@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "../motion/Reveal";
+import { staggerContainer } from "../motion/variants";
 
 export default function Hero() {
   return (
@@ -51,20 +55,20 @@ export default function Hero() {
       </div>
 
       {/* ================= QUICK STATS ================= */}
-      <div className="grid md:grid-cols-3 gap-12 text-center pt-8">
-        <div className="space-y-2">
+      <Reveal variants={staggerContainer} className="grid md:grid-cols-3 gap-12 text-center pt-8">
+        <Reveal className="space-y-2">
           <h3 className="text-4xl font-bold text-accent">4+</h3>
           <p className="text-primary font-semibold text-lg">Years in Fullstack & SRE</p>
-        </div>
-        <div className="space-y-2">
+        </Reveal>
+        <Reveal className="space-y-2">
           <h3 className="text-4xl font-bold text-accent">10+</h3>
           <p className="text-primary font-semibold text-lg">Projects Delivered</p>
-        </div>
-        <div className="space-y-2">
+        </Reveal>
+        <Reveal className="space-y-2">
           <h3 className="text-4xl font-bold text-accent">50k+</h3>
           <p className="text-primary font-semibold text-lg">Users Impacted</p>
-        </div>
-      </div>
+        </Reveal>
+      </Reveal>
     </section>
   );
 }

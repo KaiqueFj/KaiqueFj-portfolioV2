@@ -14,15 +14,6 @@
   --color-accent-border: rgba(59, 130, 246, 0.4);
 }
 
-:root {
-  --foreground: #171717;
-}
-
-:root {
-  --color-foreground: var(--foreground);
-  --font-sans: "Inter", sans-serif;
-}
-
 .dark {
   --color-background: #0a0f1c;
   --color-surface: #121a2b;
@@ -44,4 +35,19 @@
     background-color 0.25s ease,
     color 0.25s ease,
     border-color 0.25s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff0088;
+  will-change: transform;
 }

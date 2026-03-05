@@ -25,14 +25,13 @@ export default function ProjectCard({
     <Link
       href={`/projects/${slug}`}
       className={clsx(
-        "group rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl",
-        "border border-white/5 bg-surface/60 backdrop-blur-md",
+        "group w-fit rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl",
         className,
       )}
     >
       {/* Image (only in default variant) */}
       {!isCompact && (
-        <div className="relative w-full flex justify-center items-center overflow-hidden rounded-lg py-8">
+        <div className="relative  w-full flex justify-center items-center overflow-hidden rounded-lg py-8">
           {/* Background Gradient Layer */}
           <div className=" absolute inset-0 bg-linear-to-b from-accent via-accent/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
