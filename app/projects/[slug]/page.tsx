@@ -1,4 +1,4 @@
-import ProjectCard from "@/app/_components/Project/ProjectCard";
+import SelectedProject from "@/app/_components/Project/SelectedProject";
 import { projects } from "@/app/data/projectsData";
 import { notFound } from "next/navigation";
 
@@ -15,9 +15,9 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) return notFound();
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <ProjectCard {...project} />
+    <section className="max-w-7xl mx-auto px-6 ">
+      <div className="flex gap-10">
+        <SelectedProject {...project} />
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ export default function ProjectsOverview() {
         ))}
 
         <Link
-          href="/showcase"
+          href="/projects"
           className="group flex flex-col justify-center items-center rounded-2xl bg-accent/70 border border-primary p-10 text-center transition-all duration-300 hover:bg-accent/60 hover:-translate-y-1 hover:shadow-xl"
         >
           <span className="text-5xl font-bold text-primary mb-4 transition-transform duration-300 group-hover:scale-110">

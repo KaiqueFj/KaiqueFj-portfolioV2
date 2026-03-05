@@ -32,10 +32,13 @@ export default function Experiences() {
                     <h3 className="text-lg font-semibold text-accent">{exp.company}</h3>
                     <span className="text-sm text-accent">{exp.period}</span>
                   </div>
-
                   <span className="text-sm text-primary">{exp.role}</span>
-
                   <p className="text-sm text-secondary leading-relaxed">{exp.description}</p>
+                  <ul className="mt-3 flex flex-col gap-1 text-sm text-secondary list-disc list-inside">
+                    {exp.highlights.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
