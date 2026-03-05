@@ -1,5 +1,6 @@
 import { projects } from "@/app/data/projectsData";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
+import { Code2 } from "lucide-react";
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 
@@ -9,7 +10,12 @@ export default function ProjectsOverview() {
 
   return (
     <section className="flex flex-col gap-12">
-      <h2 className="font-semibold text-primary text-4xl">Projects Delivered</h2>
+      <div className="flex items-center gap-4">
+        <div className="p-3 rounded-xl bg-accent/80">
+          <Code2 className="h-6 w-6 text-primary" />
+        </div>
+        <h2 className="text-2xl font-semibold text-primary">Projects Delivered</h2>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_0.6fr] gap-8">
         {featuredProjects.map((project) => (
@@ -24,13 +30,13 @@ export default function ProjectsOverview() {
             +{remainingCount}
           </span>
 
-          <h3 className="text-lg font-semibold text-primary-100 mb-2">Explore My Showcase</h3>
+          <h3 className="text-lg font-semibold text-primary mb-2">Explore My Showcase</h3>
 
-          <p className="text-sm text-primary-200 mb-6 max-w-xs">
+          <p className="text-sm text-primary mb-6 max-w-xs">
             Dive deeper into my architecture experiments and production builds.
           </p>
 
-          <div className="flex items-center gap-2 text-primary-100 font-medium">
+          <div className="flex items-center gap-2 text-primary font-medium">
             View All Projects
             <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-2" />
           </div>

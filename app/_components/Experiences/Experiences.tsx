@@ -1,5 +1,7 @@
+"use client";
+
 import { experiences } from "@/app/data/experienceData";
-import { BriefcaseIcon } from "@heroicons/react/16/solid";
+import { BriefcaseIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Experiences() {
@@ -33,8 +35,11 @@ export default function Experiences() {
                     <span className="text-sm text-accent">{exp.period}</span>
                   </div>
                   <span className="text-sm text-primary">{exp.role}</span>
-                  <p className="text-sm text-secondary leading-relaxed">{exp.description}</p>
-                  <ul className="mt-3 flex flex-col gap-1 text-sm text-secondary list-disc list-inside">
+                  <p className="text-sm text-secondary line-clamp-5 md:line-clamp-4 leading-relaxed">
+                    {exp.description}
+                  </p>
+
+                  <ul className=" md:flex mt-3 flex-col gap-2 text-sm text-secondary list-disc list-outside pl-5 wrpap-break-words">
                     {exp.highlights.map((item) => (
                       <li key={item}>{item}</li>
                     ))}

@@ -8,30 +8,28 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row items-center gap-16">
         {/* Left Text */}
         <div className="flex-1 space-y-8">
-          <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight">
-            <span className="bg-linear-to-r from-accent to-accent/90 bg-clip-text text-transparent">
-              Software Engineer building the next level
-            </span>
+          <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold leading-tight bg-linear-to-r from-accent to-accent/90 bg-clip-text text-transparent">
+            Software Engineer building the next level
           </h1>
 
-          <p className="text-lg md:text-lg text-primary max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-primary max-w-2xl leading-relaxed">
             Hi, I’m Kaique Ferraz, Fullstack Engineer / Senior SRE passionate about distributed systems, observability,
             and production reliability. I design software that empowers businesses to operate confidently and
             efficiently.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-wrap gap-4 pt-2">
+          <div className="flex justify-center md:justify-start flex-wrap gap-4 pt-2">
             <Link
-              href="#contact"
-              className="px-6 py-3 rounded-xl border bg-accent/60 border-accent-border hover:border-accent-soft text-primary font-medium transition"
+              href="/hireMe"
+              className="px-6 py-3  rounded-xl border bg-accent/60 border-accent-border hover:border-accent-soft text-primary font-semibold transition"
             >
-              Hire Me
+              Get in touch
             </Link>
             <a
               href="/Cv/Kaique-Ferraz-de-Jesus-CV-US.pdf"
               download
-              className="px-6 py-3 rounded-xl border bg-accent/60 border-accent-border hover:border-accent-soft text-primary font-medium transition"
+              className="px-6 py-3 rounded-xl border bg-accent/60 border-accent-border hover:border-accent-soft text-primary font-semibold transition"
             >
               Download Resume
             </a>
@@ -56,15 +54,15 @@ export default function Hero() {
       <div className="grid md:grid-cols-3 gap-12 text-center pt-8">
         <div className="space-y-2">
           <h3 className="text-4xl font-bold text-accent">4+</h3>
-          <p className="text-primary">Years in Fullstack & SRE</p>
+          <p className="text-primary font-semibold text-lg">Years in Fullstack & SRE</p>
         </div>
         <div className="space-y-2">
           <h3 className="text-4xl font-bold text-accent">10+</h3>
-          <p className="text-primary">Projects Delivered</p>
+          <p className="text-primary font-semibold text-lg">Projects Delivered</p>
         </div>
         <div className="space-y-2">
           <h3 className="text-4xl font-bold text-accent">50k+</h3>
-          <p className="text-primary">Users Impacted</p>
+          <p className="text-primary font-semibold text-lg">Users Impacted</p>
         </div>
       </div>
     </section>
