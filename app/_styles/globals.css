@@ -1,36 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-  /* ===== Base ===== */
-  --color-background: #0a0f1c;
-  --color-surface: #121a2b;
-  --color-surface-hover: #1a2540;
+  --color-background: #ffffff;
+  --color-surface: #f1f5f9;
+  --color-surface-hover: #e2e8f0;
 
-  /* ===== Text ===== */
-  --color-primary: #f8fafc;
-  --color-secondary: #94a3b8;
-  --color-tertiary: #334155;
+  --color-primary: #0f172a;
+  --color-secondary: #475569;
+  --color-tertiary: #94a3b8;
 
-  /* ===== Accent ===== */
   --color-accent: #3b82f6;
   --color-accent-soft: rgba(59, 130, 246, 0.12);
   --color-accent-border: rgba(59, 130, 246, 0.4);
 }
 
 :root {
-  --background: #ffffff;
   --foreground: #171717;
 }
 
 :root {
-  --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "Inter", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --color-background: #0a0f1c;
+  --color-surface: #121a2b;
+  --color-surface-hover: #1a2540;
+
+  --color-primary: #f8fafc;
+  --color-secondary: #94a3b8;
+  --color-tertiary: #334155;
+
+  --color-accent: #3b82f6;
+  --color-accent-soft: rgba(59, 130, 246, 0.12);
+  --color-accent-border: rgba(59, 130, 246, 0.4);
+}
+
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
 }

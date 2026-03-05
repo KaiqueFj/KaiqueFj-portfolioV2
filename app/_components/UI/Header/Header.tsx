@@ -1,10 +1,13 @@
 "use client";
 
+import { useTheme } from "@/hooks/useTheme";
 import { CommandLineIcon } from "@heroicons/react/16/solid";
-import { GithubIcon, LinkedinIcon, MoonIcon } from "lucide-react";
+import { GithubIcon, LinkedinIcon, MoonIcon, SunIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <header className="sticky mt-4 mb-10 top-0 py-3 z-50 flex justify-center">
       <div className=" flex items-center gap-6 px-6 py-3 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-lg">
@@ -33,8 +36,12 @@ export default function Header() {
             <GithubIcon className="h-5 w-5 text-primary hover:text-accent transition" />
           </Link>
 
-          <button>
-            <MoonIcon className="h-5 w-5 text-primary hover:text-accent transition" />
+          <button onClick={toggleTheme}>
+            {theme === "dark" ? (
+              <SunIcon className="h-5 w-5 text-primary hover:text-accent transition" />
+            ) : (
+              <MoonIcon className="h-5 w-5 text-primary hover:text-accent transition" />
+            )}
           </button>
         </nav>
       </div>
