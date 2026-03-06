@@ -8,7 +8,7 @@ import { staggerContainer } from "../motion/variants";
 
 export default function Experiences() {
   return (
-    <section className="flex flex-col gap-16">
+    <section className="flex flex-col mt-24 gap-16">
       <div className="flex items-center gap-4">
         <div className="p-3 rounded-xl bg-accent/80">
           <BriefcaseIcon className="h-6 w-6 text-primary" />

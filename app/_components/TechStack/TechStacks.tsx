@@ -4,7 +4,7 @@ import { staggerContainer } from "../motion/variants";
 
 export default function TechStacks() {
   return (
-    <section className="flex flex-col gap-16">
+    <section className="flex flex-col mt-24 gap-16">
       {/* Section Header */}
       <div className="max-w-2xl">
         <h2 className="text-3xl text-primary font-semibold">Technologies Used</h2>
@@ -31,7 +31,7 @@ export default function TechStacks() {
                 {section.items.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-4 py-2 text-primary text-sm rounded-full bg-secondary/40 border border-secondary hover:border-accent transition"
+                    className="px-4 py-2 text-primary text-sm rounded-full bg-accent-soft border border-accent-borderhover:bg-accent-soft transition"
                   >
                     {tech.name}
                   </span>

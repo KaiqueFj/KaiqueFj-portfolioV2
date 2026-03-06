@@ -29,8 +29,8 @@ export default function RootLayout({
       >
         {/* Top Glow Layer */}
         <div className="absolute inset-x-0 top-0 h-200 -z-10 overflow-hidden">
-          <div className="absolute -top-32 left-0 w-150 h-150 bg-accent/20 blur-[150px] rounded-full" />
-          <div className="absolute -top-32 right-0 w-150 h-150 bg-accent/10 blur-[150px] rounded-full" />
+          <div className="absolute -top-40 left-[-10%] w-125 h-125 bg-accent/20 blur-[180px] rounded-full" />
+          <div className="absolute -top-40 right-[-10%] w-125 h-125 bg-accent/20 blur-[180px] rounded-full" />
         </div>
 
         <Header />

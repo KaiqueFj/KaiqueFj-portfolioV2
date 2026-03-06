@@ -6,7 +6,7 @@ import TechStacks from "./_components/TechStack/TechStacks";
 export default function Page() {
   return (
     <div className="mx-auto max-w-7xl ">
-      <div className="flex flex-col gap-32 ">
+      <div className="flex flex-col  ">
         <Hero />
         <ProjectsOverview />
         <Experiences />

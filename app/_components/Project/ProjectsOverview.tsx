@@ -13,7 +13,7 @@ export default function ProjectsOverview() {
   const remainingCount = projects.length - 2;
 
   return (
-    <section className="flex flex-col gap-12">
+    <section className="flex flex-col  mt-24 gap-12">
       <div className="flex items-center gap-4">
         <div className="p-3 rounded-xl bg-accent/80">
           <Code2 className="h-6 w-6 text-primary" />
